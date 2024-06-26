@@ -51,23 +51,27 @@ export default function HomeScreen() {
     <ParallaxScrollView
       headerBackgroundColor={{ light: "#A1CEDC", dark: "#1D3D47" }}
       headerImage={
-        <SymbolView
-          name="camera.circle"
-          size={250}
-          type="hierarchical"
-          tintColor={Colors.dark.snapPrimary}
-          animationSpec={{
-            effect: {
-              type: "bounce",
-            },
-          }}
-          fallback={
-            <Image
+        // <SymbolView
+        //   name="camera.circle"
+        //   size={250}
+        //   type="hierarchical"
+        //   tintColor={Colors.dark.snapPrimary}
+        //   animationSpec={{
+        //     effect: {
+        //       type: "bounce",
+        //     },
+        //   }}
+        //   fallback={
+        //     <Image
+        //       source={require("@/assets/images/partial-react-logo.png")}
+        //       style={styles.reactLogo}
+        //     />
+        //   }
+        // />
+        <Image
               source={require("@/assets/images/partial-react-logo.png")}
               style={styles.reactLogo}
             />
-          }
-        />
       }
     >
       <ThemedView style={styles.titleContainer}>

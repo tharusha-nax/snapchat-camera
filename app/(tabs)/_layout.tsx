@@ -4,7 +4,7 @@ import React from 'react';
 import { TabBarIcon } from '@/components/navigation/TabBarIcon';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
-import { useFirstTimeOpen } from '@/hooks/useFirstTImeOprn';
+import { useFirstTimeOpen } from '@/hooks/useFirstTImeOpen';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
