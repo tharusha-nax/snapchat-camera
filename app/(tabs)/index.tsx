@@ -10,6 +10,7 @@ import { CameraMode, CameraView } from "expo-camera";
 import * as WebBrowser from "expo-web-browser";
 import IconButton from "@/components/IconButton";
 import BottomRowTools from "@/components/BottomRowTools";
+import MainRowActions from "@/components/MainRowActions";
 
 export default function HomeScreen() {
   const cameraRef = React.useRef<CameraView>(null);
@@ -18,6 +19,7 @@ export default function HomeScreen() {
   return (
     <View style={{ flex: 1 }}>
       <CameraView ref={cameraRef} mode={cameraMode} style={{ flex: 1 }}>
+        <MainRowActions cameraMode={cameraMode} handleTakePicture={() => {}} isRecording={false} />
         <BottomRowTools setCameraMode={setCameraMode} cameraMode={cameraMode} />
       </CameraView>
     </View>
